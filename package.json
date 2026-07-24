@@ -1,0 +1,24 @@
+{
+  "name": "dataset-srj26-bus-routing",
+  "version": "0.0.1",
+  "description": "Synthetic tscircuit bus-routing dataset with dense BGA escape fanouts",
+  "private": true,
+  "keywords": [
+    "tscircuit",
+    "circuit",
+    "pcb",
+    "electronics"
+  ],
+  "scripts": {
+    "dev": "tsci dev",
+    "build": "tsci build boards --ignore-netlist-drc --ignore-pin-specification-drc",
+    "snapshot": "tsci snapshot boards",
+    "snapshot:update": "tsci snapshot boards --update",
+    "start": "tsci dev",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "tscircuit": "0.0.2142",
+    "typescript": "^5.0.0"
+  }
+}
