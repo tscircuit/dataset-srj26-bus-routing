@@ -12,13 +12,24 @@
   "scripts": {
     "dev": "tsci dev",
     "build": "tsci build boards --ignore-netlist-drc --ignore-pin-specification-drc",
+    "build:site": "cosmos-export",
+    "cosmos": "cosmos",
+    "generate:catalog-assets": "bun scripts/generate-catalog-assets.mjs",
     "snapshot": "tsci snapshot boards",
     "snapshot:update": "tsci snapshot boards --update",
     "start": "tsci dev",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
+    "@tscircuit/capacity-autorouter": "0.0.764",
+    "@types/react": "^19.2.4",
+    "graphics-debug": "^0.0.95",
+    "react": "^19.2.4",
+    "react-cosmos": "^7.3.0",
+    "react-cosmos-plugin-vite": "^7.3.0",
+    "react-dom": "^19.2.4",
     "tscircuit": "0.0.2142",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "vite": "^8.1.5"
   }
 }
